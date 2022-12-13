@@ -1,5 +1,4 @@
 import doctest
-
 class Book:
     def __init__(self, title:str, genre: str, pages: int):
         """
