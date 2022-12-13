@@ -3,14 +3,11 @@ import doctest
 class Book:
     def __init__(self, title:str, genre: str, pages: int):
         """
-
         :param genre:
         :param title:
         :param pages:
-
         Примеры:
         >>> book=Book("Капитанская дочка",'роман',pages=145)
-
         """
 
         if not isinstance(pages, int):
