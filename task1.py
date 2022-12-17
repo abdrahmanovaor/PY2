@@ -39,9 +39,7 @@ class Book:
             if not genre == 'роман':
                 raise ValueError (f"Ожидается роман")
             self.genre = genre
-if __name__ == "__main__"
     book = Book("Капитанская дочка", genre='роман', pages=145)
-    doctest.testmod()
 class Building():
     """описание здания"""
     def __init__(self, street:str, number:int):
@@ -78,4 +76,5 @@ class City():
         if self.year > 2000:
             print("Город" + self.name "новый")
 city1 = City("Moscow", 12600000, 1147)
-if __name__ == "__main__"
+if __name__ == "__main__":
+    doctest.testmod()
