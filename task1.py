@@ -1,5 +1,4 @@
 import doctest
-
 class Book:
     def __init__(self, title:str, genre: str, pages: int):
         """
@@ -12,23 +11,21 @@ class Book:
         >>> book=Book("Капитанская дочка",'роман',pages=145)
 
         """
-
         if not isinstance(pages, int):
-            raise TypeError (f"Не тот тип для количества страниц. Ожидается int")
+            raise TypeError (Не тот тип для количества страниц. Ожидается int)
         if not pages > 120:
-            raise ValueError(f"Ожидается книга объемом больше 120 страниц")
+            raise ValueError(Ожидается книга объемом больше 120 страниц)
         self.pages = pages
 
         if not isinstance(genre,str):
-            raise TypeError (f"Не тот тип данных. Ожидается str")
+            raise TypeError (Не тот тип данных. Ожидается str)
         if genre != 'роман':
-            raise ValueError(f"Ожидается роман")
+            raise ValueError(Ожидается роман)
         self.genre = genre
         if not isinstance(title, str)
             raise TypeError
         self.title = title
-
-    def method_1(self) -> bool:
+    def methodnovel(self) -> bool:
         """
         Функция которая проверяет является ли книга романом
         :return: Является ли книга романом
@@ -60,7 +57,6 @@ class Building():
         if self.number > 50:
             print("Здание на улице" + self.street + "№" + self.number + "не построено")
 building_ = Building("Ленина", 24)
-
 class City():
     """описание города"""
     def __init__(self, name:str, population: int, year:int):
@@ -82,8 +78,4 @@ class City():
         if self.year > 2000:
             print("Город" + self.name "новый")
 city1 = City("Moscow", 12600000, 1147)
-
-
-
-
-
+if __name__ == "__main__"
