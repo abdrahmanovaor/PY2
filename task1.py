@@ -2,21 +2,17 @@ import doctest
 class Book:
     def __init__(self, title:str, genre: str, pages: int):
         """
-
         :param genre:
         :param title:
         :param pages:
-
         Примеры:
         >>> book=Book("Капитанская дочка",'роман',pages=145)
-
         """
         if not isinstance(pages, int):
             raise TypeError (Не тот тип для количества страниц. Ожидается int)
         if not pages > 120:
             raise ValueError(Ожидается книга объемом больше 120 страниц)
         self.pages = pages
-
         if not isinstance(genre,str):
             raise TypeError (Не тот тип данных. Ожидается str)
         if genre != 'роман':
