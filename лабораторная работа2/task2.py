@@ -31,17 +31,8 @@ class Library:
         if self.books == []:
             return 1
         else:
-            return id[-1]=+1
+            return id[-1]+=1
     def get_index_by_book_id(self):
-
-
-
-
-
-
-
-
-
 
 if __name__ == '__main__':
     empty_library = Library()  # инициализируем пустую библиотеку
